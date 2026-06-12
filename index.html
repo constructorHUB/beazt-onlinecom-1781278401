@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <script src="./index.js"></script>
+    <script src="./common.js"></script>
+
+    <link rel="manifest" href="./manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2">
+    <link rel="preload" as="image" href="_assets/images/1781253841-logo.svg" fetchpriority="high">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./index.css">
+    <meta name="theme-color" content="">
+    <title>Beazt Online Casino | Slots, Live Casino, Sportsbook and Mobile Play</title>
+    <meta name="description"
+          content="Join Beazt Online Casino for slots, live casino games, table games, sports betting, welcome bonuses, cashback rewards, and mobile gaming.">
+    <link rel="canonical" href="https://beazt-online.com">
+    <meta property="og:title" content="Beazt Online Casino | Slots, Live Casino, Sportsbook and Mobile Play">
+    <meta property="og:description"
+          content="Join Beazt Online Casino for slots, live casino games, table games, sports betting, welcome bonuses, cashback rewards, and mobile gaming.">
+    <meta property="og:url" content="https://beazt-online.com">
+    <meta property="og:site_name" content="Beazt Online Casino | Slots, Live Casino, Sportsbook and Mobile Play">
+    <meta property="og:locale" content="en">
+    <meta property="og:image" content="_assets/images/1781253833-main.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="beazt-online.com">
+    <meta name="twitter:title" content="Beazt Online Casino | Slots, Live Casino, Sportsbook and Mobile Play">
+    <meta name="twitter:description"
+          content="Join Beazt Online Casino for slots, live casino games, table games, sports betting, welcome bonuses, cashback rewards, and mobile gaming.">
+    <meta name="twitter:image" content="_assets/images/1781253833-main.webp">
+    <meta name="twitter:image:width" content="1200">
+    <meta name="twitter:image:height" content="630">
+    <link rel="icon" href="_assets/images/1781253835-favicon.svg" type="image/x-icon" sizes="16x16">
+    <meta name="language" content="en">
+    <link rel="apple-touch-icon" href="_assets/images/1781253812-favicon.svg" sizes="96x96">
+    <link rel="icon" href="_assets/images/1781253812-favicon.svg" type="image/webp" sizes="192x192">
+
+    <link rel="preload" href="_assets/images/1781253863-main.webp" as="image" fetchpriority="high">
+
+</head>
+
+<body>
+<svg
+        style="display: none"
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 256 256"
+>
+    <symbol id="minus-icon" viewBox="0 0 256 256">
+        <path
+                fill="#4f4f4f"
+                d="M228 128a12 12 0 0 1-12 12H40a12 12 0 0 1 0-24h176a12 12 0 0 1 12 12"
+        />
+    </symbol>
+</svg>
+
+<svg
+        style="display: none"
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 32 32"
+>
+    <symbol id="globe-icon" viewBox="0 0 32 32">
+        <path
+                fill="#22FF36"
+                d="M32.032 16c0-8.501-6.677-15.472-15.072-15.969-0.173-0.019-0.346-0.032-0.523-0.032-0.052 0-0.104 0.005-0.156 0.007-0.093-0.002-0.186-0.007-0.281-0.007-8.84 0-16.032 7.178-16.032 16.001s7.192 16.001 16.032 16.001c0.094 0 0.188-0.006 0.281-0.008 0.052 0.002 0.104 0.008 0.156 0.008 0.176 0 0.349-0.012 0.523-0.032 8.395-0.497 15.072-7.468 15.072-15.969zM29.049 21.151c-0.551-0.16-1.935-0.507-4.377-0.794 0.202-1.381 0.313-2.84 0.313-4.357 0-1.196-0.069-2.354-0.197-3.469 3.094-0.37 4.45-0.835 4.54-0.867l-0.372-1.050c0.695 1.659 1.080 3.478 1.080 5.386 0 1.818-0.352 3.555-0.987 5.151zM8.921 16c0-1.119 0.074-2.212 0.21-3.263 1.621 0.127 3.561 0.222 5.839 0.243v6.939c-2.219 0.021-4.114 0.111-5.709 0.234-0.22-1.319-0.34-2.715-0.34-4.154zM16.967 2.132c2.452 0.711 4.552 4.115 5.492 8.628-1.512 0.12-3.332 0.209-5.492 0.229v-8.857zM14.971 2.156v8.832c-2.136-0.021-3.965-0.109-5.502-0.226 0.96-4.457 3.076-7.836 5.502-8.606zM14.971 21.913l0 7.929c-2.263-0.718-4.256-3.705-5.293-7.719 1.492-0.11 3.253-0.189 5.292-0.21zM16.967 29.868l-0-7.955c2.061 0.020 3.814 0.102 5.288 0.217-1.019 4.067-3 7.076-5.288 7.738zM16.967 19.92l0-6.939c2.291-0.021 4.218-0.118 5.818-0.25 0.131 1.053 0.203 2.147 0.203 3.268 0 1.442-0.116 2.84-0.329 4.16-1.575-0.128-3.462-0.219-5.692-0.24zM28.588 9.81c-0.302 0.094-1.564 0.453-4.094 0.751-0.564-2.998-1.584-5.561-2.91-7.412 3.048 1.325 5.535 3.697 7.005 6.661zM11.213 2.831c-1.632 1.873-2.963 4.568-3.691 7.754-2.265-0.245-3.623-0.534-4.166-0.665 1.585-3.27 4.407-5.836 7.856-7.088zM2.614 11.787c0.385 0.104 1.841 0.467 4.549 0.766-0.155 1.107-0.24 2.26-0.24 3.447 0 1.509 0.136 2.96 0.383 4.334-2.325 0.251-3.755 0.552-4.396 0.706-0.607-1.566-0.944-3.264-0.944-5.041 0-1.467 0.228-2.883 0.649-4.213zM3.784 22.886c0.727-0.154 2.029-0.39 3.956-0.591 0.759 2.803 1.993 5.175 3.473 6.874-3.16-1.148-5.79-3.398-7.429-6.282v0zM21.583 28.849c1.195-1.665 2.14-3.907 2.728-6.525 1.982 0.227 3.226 0.494 3.853 0.652-1.5 2.596-3.808 4.669-6.581 5.873z">
+        </path>
+    </symbol>
+</svg>
+
+<svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="star-icon" viewBox="0 0 32 31">
+        <path d="M10.0431 24.5932L15.8898 21.0667L21.7365 24.6396L20.2052 17.9577L25.3559 13.5031L18.5811 12.8999L15.8898 6.58913L13.1985 12.8535L6.42371 13.4567L11.5744 17.9577L10.0431 24.5932ZM15.8898 25.4285L8.187 30.0687C7.84672 30.2853 7.49096 30.3781 7.11975 30.3471C6.74853 30.3162 6.42371 30.1925 6.1453 29.9759C5.86688 29.7594 5.65034 29.489 5.49566 29.1648C5.34099 28.8406 5.31005 28.4768 5.40286 28.0734L7.44456 19.3034L0.623417 13.4103C0.314068 13.1319 0.121034 12.8145 0.0443157 12.4581C-0.0324028 12.1017 -0.00951111 11.754 0.112991 11.415C0.235493 11.0759 0.421103 10.7975 0.669819 10.5797C0.918536 10.362 1.25882 10.2227 1.69067 10.1621L10.6927 9.37327L14.1729 1.11366C14.3276 0.742438 14.5676 0.464023 14.8931 0.278414C15.2185 0.0928044 15.5507 0 15.8898 0C16.2288 0 16.5611 0.0928044 16.8865 0.278414C17.2119 0.464023 17.452 0.742438 17.6067 1.11366L21.0869 9.37327L30.0889 10.1621C30.522 10.224 30.8623 10.3632 31.1098 10.5797C31.3572 10.7963 31.5428 11.0747 31.6666 11.415C31.7903 11.7553 31.8138 12.1036 31.7371 12.46C31.6604 12.8163 31.4667 13.1331 31.1562 13.4103L24.335 19.3034L26.3767 28.0734C26.4695 28.4756 26.4386 28.8394 26.2839 29.1648C26.1292 29.4902 25.9127 29.7606 25.6343 29.9759C25.3559 30.1912 25.0311 30.315 24.6598 30.3471C24.2886 30.3793 23.9329 30.2865 23.5926 30.0687L15.8898 25.4285Z" fill="#22FF36"/>
+    </symbol>
+</svg>
+
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 256 256"
+>
+    <symbol id="plus-icon" viewBox="0 0 256 256">
+        <path
+                fill="#4f4f4f"
+                d="M228 128a12 12 0 0 1-12 12h-76v76a12 12 0 0 1-24 0v-76H40a12 12 0 0 1 0-24h76V40a12 12 0 0 1 24 0v76h76a12 12 0 0 1 12 12"
+        />
+    </symbol>
+</svg>
+
+<svg
+        width="33"
+        height="32"
+        viewBox="0 0 33 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <symbol id="play-icon" viewBox="0 0 33 32">
+        <path
+                d="M16.8334 0.0786133C7.9606 0.0786133 0.767578 7.20678 0.767578 15.9998C0.767578 24.7929 7.9606 31.921 16.8334 31.921C25.7061 31.921 32.8992 24.7929 32.8992 15.9998C32.8992 7.20678 25.7061 0.0786133 16.8334 0.0786133ZM22.3861 16.8438L14.3532 21.8192C14.1907 21.9197 14.0059 21.9703 13.821 21.9703C13.6536 21.9703 13.4859 21.929 13.3342 21.8454C13.015 21.67 12.8169 21.3372 12.8169 20.9752V11.0244C12.8169 10.6625 13.015 10.3296 13.3342 10.1543C13.6533 9.97788 14.0436 9.98857 14.3532 10.1805L22.3861 15.1559C22.6796 15.3381 22.858 15.6568 22.858 15.9998C22.858 16.3428 22.6796 16.6616 22.3861 16.8438Z"
+                fill="#22FF36"
+        />
+    </symbol>
+</svg>
+
+<svg
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <symbol id="information-outline" viewBox="0 0 20 20">
+        <path
+                d="M9 7H11V5H9V7ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18ZM10 0C8.68678 0 7.38642 0.258658 6.17317 0.761205C4.95991 1.26375 3.85752 2.00035 2.92893 2.92893C1.05357 4.8043 0 7.34784 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C3.85752 17.9997 4.95991 18.7362 6.17317 19.2388C7.38642 19.7413 8.68678 20 10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 8.68678 19.7413 7.38642 19.2388 6.17317C18.7362 4.95991 17.9997 3.85752 17.0711 2.92893C16.1425 2.00035 15.0401 1.26375 13.8268 0.761205C12.6136 0.258658 11.3132 0 10 0ZM9 15H11V9H9V15Z"
+                fill="#ffffff"
+        />
+    </symbol>
+</svg>
+
+<div class="wrapper">
+
+    <header class="header" id="top">
+        <div class="headerBlock">
+
+            <!-- Logo -->
+            <div class="headerLogoContainer">
+                <a href="https://beazt-online.com" aria-label="Main page">
+                    <img
+                            class="header__logo logo"
+                            src="_assets/images/1781253841-logo.svg"
+                            alt="Beazt"
+                    />
+                </a>
+            </div>
+
+            <div class="navBlockMain">
+
+            <!-- Main Navigation -->
+            <nav>
+                <button class="hamburger" aria-label="Toggle navigation menu">
+                    <span></span>
+                </button>
+
+                <ul class="nav__list nav__list--header">
+
+                    <li><a href="index">index</a></li>
+                    <li><a href="app">App</a></li>
+                    <li><a href="bonuses">Bonuses</a></li>
+                    <li><a href="terms">Terms</a></li>
+                    <li><a href="privacy">Privacy</a></li>
+                    <li><a href="faq">FAQ</a></li>
+
+                </ul>
+            </nav>
+                <!-- CTA buttons -->
+                <div class="btn__list">
+<!--                    <div class="nav__item">-->
+<!--                        <a-->
+<!--                                class="nav__link"-->
+<!--                                target="_blank"-->
+<!--                                href="casino.html?id=example-offer-id"-->
+<!--                                aria-label=""-->
+<!--                                id="navSignUp"-->
+<!--                        >-->
+<!--                            -->
+<!--                        </a>-->
+<!--                    </div>-->
+
+                    <div class="nav__item nav__itemLarge">
+                        <a
+                                class="nav__link nav__linkLarge"
+                                target="_blank"
+                                href="casino.html?id=example-offer-id"
+                                aria-label="Play Now"
+                                id="navPlayNow"
+                        >
+                            Play Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main class="main">
+        <section class="heroContainer">
+            <div class="hero">
+                <div class="heroBlock block">
+                    <div class="heroGroup">
+                        <div class="heroTextGroup">
+                            <p class="heroText heroTextDesktop">Exclusive welcome offer of</p>
+                            <p class="heroText heroTextMobile">Exclusive welcome bonus of</p>
+                            <p class="heroText heroTextBonus" id="bonusText"></p>
+                        </div><a target="_blank" class="heroLink" id="bonusLink" href="/" aria-label="Play game"><span
+                            class="heroButton btn btn--large">Claim Bonus</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="heroUnder">
+                <h1 class="heroText heroMainTitle">Beazt Online Casino with Slots, Live Casino Games, Sportsbook Access and Mobile Entertainment</h1>
+            </div>
+        </section>
+        <div class="bonusesCircleContainer">
+            <section class="topCasino">
+                <div class="container">
+                    <div class="topCasinoBlock block">
+                        <h2 class="topCasinoTitle title"><span>Top Casinos <span id="countryName"></span></span>
+                        </h2>
+                        <div class="topCasinoGroup" id="casinoCardContainer">
+                            <!-- Casino cards will be dynamically inserted here --></div><button
+                            class="topCasinoButton btn btn--large" id="showMoreButton"> All Casino </button>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <div class="advantagesCircleContainer">
+            <section class="advantages">
+                <div class="container">
+                    <div class="advantagesBlock block">
+                        <div class="advantagesDescription">
+                            <h2 class="advantagesTitle title">Advantages</h2>
+                            <ul class="advantagesList">
+                                <li class="providersGroup"></li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Mobile casino play</p>
+                                </li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Welcome match bonus</p>
+                                </li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Live casino games</p>
+                                </li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Cashback rewards</p>
+                                </li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Secure payment access</p>
+                                </li>
+                                <li class="providersGroup"></li>
+                            </ul><a class="advantagesLink" id="advantagesLink" target="_blank" href="/" aria-label="Know more"><span
+                                class="advantagesButton btn btn--large">Know more</span></a>
+                        </div>
+                        <div class="advantagesMobile">
+                            <h2 class="advantagesTitle title advantagesAppTitle">Beazt Mobile App</h2><img
+                                class="advantagesMobilePhone" src="_assets/images/1781255931-mobile.webp" title="Beazt Mobile"
+                                alt="Beazt Mobile App" />
+                            <div class="advantagesStoreGroup"><a href="/" id="appStoreLink" aria-label="Play game"
+                                                                 target="_blank"><img class="advantagesStore" width="181" height="53"
+                                                                                      src="./assets/images/advantages/app-store.webp" alt="iOs App " title="Beazt Mobile App"/></a><a
+                                    href="/" id="googlePlayLink" aria-label="Play game" target="_blank"><img
+                                    class="advantagesStore" width="181" height="54"
+                                    src="./assets/images/advantages/google-play.webp" alt="android App Beazt Mobile App" title="Beazt Mobile App" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="games" id="games">
+                <div class="container">
+                    <div class="gamesBlock block">
+                        <h2 class="gamesTitle title"><span>Popular Games</span></h2>
+                        <div class="gamesGroup" id="gamesContainer"><!-- Games will be dynamically inserted here -->
+                        </div><a target="_blank" class="gamesLink" id="allGamesLink" href="/" aria-label="All Games"><span
+                            class="gamesButton btn btn--large">All Games</span></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="historyCircleContainer">
+            <section class="history">
+                <div class="container">
+                    <div class="historyBlock block">
+                        <h2 class="historyTitle title">About the Casino</h2>
+                        <div class="historyGroup">
+                            <div class="historyColumn">
+                                <div class="historyText">
+                                    <p class="historyDescription">At Beazt, we bring together online casino entertainment and sports betting in one modern platform created for players who want direct access, smooth navigation, and flexible gaming options. Our casino experience includes slots, jackpot games, live casino titles, table games, and sports betting features.</p>
+                                    <ul class="historyList">
+                                        <li class="historyItem">Welcome bonus up to $500.</li>
+                                        <li class="historyItem">Minimum deposit starts from $10.</li>
+                                        <li class="historyItem">Casino wagering requirement is 35x.</li>
+                                    </ul>
+                                    <p class="historyDescription">Our guests can enjoy a welcome bonus that offers a 100% deposit boost up to $500. New players can create an account, make a qualifying deposit, choose their preferred bonus type, and start playing with a casino or sports bonus option.</p>
+                                </div>
+                            </div>
+                            <div class="historyColumn"><img class="historyImage"
+                                                            src="_assets/images/1781255980-desktop.webp" alt="Beazt" title="Beazt Desktop"/></div>
+                        </div>
+                        <p class="historyDescription">Our casino route is designed for guests who enjoy slots and selected casino games, while our sports bonus option supports eligible sports markets. Real money is used before bonus money, and the bonus can be forfeited if a guest chooses to withdraw available real-money funds.
+
+Beazt is also built for mobile play, allowing our guests to access casino games and sports betting from compatible devices. We support secure payment options, responsible gaming tools, account limits, and controlled play features that help our guests manage their activity.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="historyCircleContainer">
+            <section class="history">
+                <div class="container">
+                    <div class="historyBlock block">
+                        <h2 class="historyTitle title">Beazt Casino: Fast Online Casino Action, Live Tables and Rewards</h2>
+                        <div class="historyDescription">
+<p>
+At Beazt Casino, we bring casino games, live dealer action, jackpots and sports betting together in one streamlined online experience. Our style is bold, fast and easy to navigate, giving players direct access to the games and offers they want without unnecessary friction. Because we operate online, our casino zones are available around the clock on desktop, mobile and tablet. Our slots lobby features thousands of titles, from classic reels and modern video slots to jackpot games and feature-rich releases. In our Live Casino, players can enjoy blackjack, roulette, baccarat and game-show formats hosted by professional dealers through high-quality streaming. Instead of physical bars or hotel facilities, we focus on a flexible digital entertainment space where every player can move between casino, live tables, sportsbook and promotions in seconds. Beazt Casino is built for comfort wherever you play, with smooth performance across devices. Our entertainment calendar includes tournaments, reload offers, free spins, cashback promotions, odds boosts and seasonal campaigns. New players can start with a welcome bonus up to $500, while returning players can explore ongoing promotions and loyalty-driven rewards. Our VIP-style experience adds even more value through tailored benefits, cashback layers, Myztery Box rewards and personal support opportunities. We designed Beazt Casino to feel fast, rewarding and complete from registration to gameplay and withdrawals.
+</p>
+<br>
+<div style="width:100%; max-width:100%; overflow:hidden;">
+  <table style="width:100%; max-width:100%; border-collapse:collapse; table-layout:fixed; font-family:Arial, sans-serif; font-size:clamp(9px, 2.2vw, 14px); color:#ffffff; background:transparent;">
+    <tr>
+      <th style="width:38%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Zone
+      </th>
+      <th style="width:62%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Days and Hours
+      </th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Beazt Casino Slots
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Daily, 24/7
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Jackpot Games
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Daily, 24/7
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Table Games
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Daily, 24/7
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Live Casino
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Daily, 24/7, depending on individual table availability
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Sportsbook
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Daily, 24/7, based on event schedules
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Promotions and Rewards Area
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Daily, 24/7, according to promotion terms
+      </td>
+    </tr>
+  </table>
+</div>
+<br>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Beazt Casino Payments, Support, Currency and Withdrawals
+</h3>
+<p>
+At Beazt Casino, we keep player support clear, responsive and focused on practical help. Our team can assist with registration, account verification, payment questions, promotions, game navigation and responsible gaming tools. Communication is primarily available in English, with an online experience designed to make every step easy to understand. We focus on clarity so players can quickly check payment status, bonus rules, account requirements and withdrawal progress.
+</p>
+<p>
+The main playing currency at Beazt Casino is the dollar, making deposits, wagers, bonuses and withdrawals straightforward. Our cashier supports trusted payment options such as Interac e-Transfer, bank transfer, credit and debit cards, Apple Pay and MiFinity. The minimum deposit is typically $10, while the minimum withdrawal is usually $20, giving players flexible access to the cashier. Deposits are processed quickly, and withdrawals are handled with a strong focus on speed, security and reliability.
+</p>
+<p>
+As an online casino, Beazt does not rely on physical ATMs or currency exchange desks. All transactions are handled through a secure digital cashier, allowing players to fund their accounts and request withdrawals from their preferred device. If a payment provider applies currency conversion or service fees, those details belong to the provider’s own terms. Beazt does not charge its own deposit fee, which helps keep the funding process simple and direct.
+</p>
+<p>
+Withdrawals at Beazt Casino are available once the player account has been verified, which protects the account and supports smoother payout processing. After a withdrawal request is submitted, we generally process payments within 24 hours, while the final arrival of funds may take 1–3 business days depending on the selected method and banking provider. Larger payments or security-sensitive transactions may include standard checks designed to protect the player and the balance. Tax treatment depends on the player’s personal situation and applicable rules; casual winnings are generally treated differently from professional gambling income, so individual advice is recommended for professional-level play.
+</p>
+<br>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Beazt Casino Access Rules, Player Conditions and Online Convenience
+</h3>
+<p>
+Beazt Casino is an online-first gaming destination, so visiting us starts with creating an account and logging in from your preferred device. We do not require a physical dress code because players can access our casino from wherever they feel comfortable. The main access requirements are legal age eligibility, accurate personal details and responsible account use. We may ask players to complete verification when needed for security, payments and withdrawals. Each player should use one personal account registered with real information. Sharing access, using someone else’s payment method or attempting to bypass bonus rules is not allowed. Our goal is to keep gameplay fair, secure and transparent. Players can use limits, pauses and control tools to manage their activity. Parking is not needed because Beazt Casino is available online 24/7. Getting started is simple: use an internet-connected device, register, choose a payment method and enter the lobby. Our navigation is designed to help players move quickly between slots, live casino, sportsbook, bonuses and the cashier.
+</p>
+<br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Access Conditions
+</h3>
+<ul>
+            <li>• Legal age access — only eligible players who meet the required age standard may play.</li>
+            <li>• Personal account — registration must be completed with the player’s own accurate details.</li>
+            <li>• Verification — identity checks may be required to protect the account and approve withdrawals.</li>
+            <li>• Responsible play — players can use limits, breaks and account tools to stay in control.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Player Conduct
+</h3>
+<ul>
+            <li>• Fair gameplay — multi-accounting, bonus abuse and rule circumvention are not permitted.</li>
+            <li>• Data safety — passwords and account access must remain private.</li>
+            <li>• Payment discipline — deposits and withdrawals must use approved payment methods.</li>
+            <li>• Promotion rules — every bonus must be used according to its own terms and time limits.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+How to Play at Beazt Casino
+</h3>
+<ul>
+            <li>• Open the platform — use a smartphone, tablet or desktop device.</li>
+            <li>• Create your account — complete registration and verify your profile when required.</li>
+            <li>• Fund your balance — choose Interac, card, Apple Pay, MiFinity or another available method.</li>
+            <li>• Enter the lobby — explore slots, live casino, table games, jackpot games or sportsbook markets.</li>
+        </ul><br><h3 style = "font-weight: bold;font-size: 32px;">
+Beazt Casino Loyalty Program, VIP Progress and Player Rewards
+</h3>
+<p>
+At Beazt Casino, loyalty is built into the rhythm of play rather than hidden behind a complicated system. Players can unlock more value through cashback, VIP-style benefits, personalized offers, progress rewards and surprise mechanics. Our rewards structure works across slots, live casino, table games and sportsbook activity. New players can start with a welcome bonus, while returning players can explore ongoing promotions and loyalty-driven extras. A key part of the experience is the VIP path, where active players may unlock more tailored benefits over time. As players progress, rewards can become more personalized through cashback opportunities, priority assistance and individual offers. Myztery Box adds a surprise element by giving players access to extra rewards through activity. The Progress Bar helps players follow their journey, while the 99% Progress Bar can move progress close to the next level. We keep the terms clear: casino bonuses usually carry 35x wagering, while sports bonuses usually carry 6x wagering. To participate, players register, fund the account, choose the relevant offer and follow the terms of that promotion. The more consistent the activity, the more opportunities Beazt Casino can unlock.
+</p>
+<br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Registration Conditions
+</h3>
+<ul>
+            <li>• Eligibility — players must meet the required age and account conditions.</li>
+            <li>• Beazt Casino account — a personal profile with accurate details is required.</li>
+            <li>• Minimum deposit — many offers can start from $10.</li>
+            <li>• Verification — account checks may be needed for full withdrawal and reward access.</li>
+            <li>• Terms acceptance — each bonus has its own rules, expiry period and wagering requirement.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Levels and Progress
+</h3>
+<ul>
+            <li>• Starter stage — access to the welcome bonus up to $500 and core promotions.</li>
+            <li>• Active player stage — reload offers, free spins and recurring promotional value.</li>
+            <li>• Advanced stage — more personalization, stronger cashback opportunities and priority-style offers.</li>
+            <li>• VIP direction — tailored support, enhanced rewards, exclusive campaigns and personal attention.</li>
+            <li>• 99% Progress Bar — a progress boost that can move the player close to the next level.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Available Rewards and Benefits
+</h3>
+<ul>
+            <li>• Welcome Bonus — up to $500 for a strong start.</li>
+            <li>• Casino Bonus wagering — 35x, a clear requirement for casino bonus money.</li>
+            <li>• Sports Bonus wagering — 6x, a streamlined wagering structure for sports offers.</li>
+            <li>• Cashback — a return-style reward based on eligible activity.</li>
+            <li>• Reload Offers — extra value on selected repeat deposits.</li>
+            <li>• Free Spins — complimentary spins on selected slot titles.</li>
+            <li>• Tournament Entries — access to competitive prize-pool events.</li>
+            <li>• Myztery Box — surprise rewards that add extra excitement.</li>
+            <li>• Personal Offers — tailored promotions for active players.</li>
+        </ul><br></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <section class="">
+            <div class="container">
+                <div class="sprovidersBlock block">
+                    <h2 class="sprovidersTitle title"> Software Providers </h2>
+                    <div class="sprovidersGroup" id="providersContainer">
+                        <!-- Provider images will be dynamically inserted here --></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="historyCircleContainer">
+            <section class="history">
+                <div class="container">
+                    <div class="historyBlock block">
+                        <h2 class="historyTitle title">Beazt Casino Bonuses, Game Offers, Wins and Seasonal Promotions</h2>
+                        <div class="historyDescription">
+<p>
+At Beazt Casino, bonuses go beyond the loyalty program, with regular promotions across casino games, live casino and sports betting. Players can explore welcome rewards, reload offers, free spins, cashback, tournament entries and special campaigns. Our welcome bonus can reach up to $500, giving new players a stronger starting balance. Many offers can begin with a minimum deposit from $10, making promotions flexible and accessible. In the slots lobby, players can receive free spins on selected games and compete in leaderboard-style events. Live Casino players can enjoy special tables, game-show formats and activity-based promotions. Sports players may find free bets, combo boosts, enhanced odds and major matchday offers. Seasonal campaigns are built around popular gaming periods, holidays and major sporting events. We structure promotions clearly, showing the bonus amount, expiry period, wagering requirement and eligible games. Wins depend on the selected game, stake, RTP, volatility and jackpot mechanics. Jackpot games can deliver larger prize potential, especially when progressive formats are involved. Beazt Casino keeps the promotional experience active, giving each part of the platform its own reward opportunities.
+</p>
+<br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Casino Bonuses
+</h3>
+<ul>
+            <li>• Welcome Bonus — up to $500 to boost the starting balance.</li>
+            <li>• Casino Bonus — a 100% match offer structure, usually with 35x wagering.</li>
+            <li>• Reload Bonus — extra value on repeat deposits, such as 25–100% depending on the promotion.</li>
+            <li>• Free Spins — 10, 25, 50 or 100 spins on selected slot titles during campaigns.</li>
+            <li>• Cashback — return-style value, with selected promotions reaching up to 20%.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Wins and Game Promotions
+</h3>
+<ul>
+            <li>• Jackpot Games — slots with larger prize potential and progressive mechanics.</li>
+            <li>• Slot Tournaments — leaderboard events with prize pools, free spins or bonus money.</li>
+            <li>• Live Casino Drops — special payouts and bonus rounds from live game providers.</li>
+            <li>• Game Show Specials — promotions on Crazy Time, Monopoly Live, Lightning-style formats and similar shows.</li>
+            <li>• High RTP Picks — curated slot selections with popular math models and strong player interest.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Sports and Seasonal Campaigns
+</h3>
+<ul>
+            <li>• Free Bets — complimentary bets for selected events.</li>
+            <li>• Combo Boosts — enhanced value for accumulator-style betting.</li>
+            <li>• Enhanced Odds — boosted odds on selected matches and markets.</li>
+            <li>• Seasonal Events — holiday campaigns with free spins, reload bonuses and tournament prizes.</li>
+            <li>• Big Match Promotions — special offers for finals, derbies, playoffs and major event days.</li>
+        </ul><br>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Beazt Casino Popular Games, Slots and Live Casino
+</h3>
+<p>
+At Beazt Casino, we bring together a large game library where players can move quickly between slots, live casino, table games, jackpots and new releases. Our casino lobby includes more than 10,000 games from leading providers such as Evolution, Pragmatic Play, Play’n GO, NetEnt, Red Tiger, Push Gaming and Big Time Gaming. Slots are a major focus thanks to their variety of mechanics, bonus rounds, free spins and jackpot features. Popular titles include Book of Dead, Sweet Bonanza and Reactoonz. Players who enjoy strategy can explore blackjack, roulette and baccarat. Live Casino recreates the feel of a real gaming floor through professional dealers and high-quality streaming. Game shows are ideal for players who want a more interactive and visual format. Jackpot games appeal to players looking for larger prize potential. Table games provide a classic pace with familiar rules and clean layouts. We optimize games for mobile play, keeping the experience stable across screen sizes. Navigation makes it easy to find popular games, new releases and favourite categories. Beazt Casino keeps choice simple, helping every player find a format that suits their style.
+</p>
+<br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Slots
+</h3>
+<ul>
+            <li>• Book of Dead — an adventure-style slot with free spins and expanding symbols.</li>
+            <li>• Sweet Bonanza — a colourful tumble slot with multipliers and bonus spins.</li>
+            <li>• Reactoonz — a cluster-pay slot with cascading wins and charged features.</li>
+            <li>• Megaways Slots — dynamic games with thousands of possible ways to win.</li>
+            <li>• Jackpot Slots — titles with larger prize potential and progressive payouts.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Table Games
+</h3>
+<ul>
+            <li>• Blackjack — a strategic card classic with a fast, focused pace.</li>
+            <li>• Roulette — European, French and live-style formats with varied betting options.</li>
+            <li>• Baccarat — an elegant card game with simple decision points.</li>
+            <li>• Video Poker — a mix of poker logic and slot-style speed.</li>
+            <li>• Table Game Variants — alternative versions of familiar casino classics.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Live Casino
+</h3>
+<ul>
+            <li>• Live Blackjack — real dealer action with multiple seats and table options.</li>
+            <li>• Live Roulette — real-time wheel play with different betting limits.</li>
+            <li>• Live Baccarat — a smooth live format led by professional hosts.</li>
+            <li>• Game Shows — visual games with wheels, multipliers and bonus rounds.</li>
+            <li>• Lightning Games — live formats with boosted multipliers and fast results.</li>
+        </ul><br>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Beazt Casino Minimum and Maximum Bets by Game Type
+</h3>
+<p>
+At Beazt Casino, betting limits depend on the selected game, provider, mode and live table. We offer flexible ranges, allowing players to enjoy low-stake slots or higher-limit live casino tables. The minimum deposit usually starts from $10, while the minimum withdrawal is typically $20. Before playing, players can always check the exact available limits inside the chosen game interface.
+</p>
+<br>
+<div style="width:100%; max-width:100%; overflow:hidden;">
+  <table style="width:100%; max-width:100%; border-collapse:collapse; table-layout:fixed; font-family:Arial, sans-serif; font-size:clamp(9px, 2.2vw, 14px); color:#ffffff; background:transparent;">
+    <tr>
+      <th style="width:38%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Beazt Casino Game or Zone
+      </th>
+      <th style="width:62%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Minimum and Maximum Bet Range
+      </th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Classic Slots</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">From $0.10 to $100+ per spin</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Video Slots</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">From $0.20 to $250+ per spin</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Megaways Slots</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">From $0.20 to $100+ per spin</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Jackpot Games</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">From $0.10 to $50+ per spin</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Blackjack</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">From $1 to $5,000+ per hand</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Roulette</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">From $0.10 to $5,000+ by betting area</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Baccarat</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">From $1 to $10,000+ per round</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Live Blackjack</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">From $5 to $10,000+ per hand</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Live Roulette</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">From $0.50 to $10,000+ by table</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Game Shows</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">From $0.10 to $5,000+ per round</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Sportsbook</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">From $1; maximum depends on market and event</td>
+    </tr>
+  </table>
+</div>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Beazt Casino Events, Live Shows, Tournaments and Entertainment
+</h3>
+<p>
+Beazt Casino brings together online casino and sportsbook entertainment, so our events cover slots, live casino, sports action, seasonal campaigns and promotional tournaments. We build a strong entertainment rhythm around regular offers, allowing players to join slot tournaments, claim free spins, activate reload deals and follow special campaigns. Live Casino game shows are a major part of the experience, featuring hosts, wheels, multipliers and bonus rounds. This format brings the energy of a casino stage into the online lobby and gives players a more visual, interactive way to play.
+</p>
+<p>
+Physical nightclubs are not part of Beazt Casino, but we recreate that high-energy mood through live game shows, evening sports events, fast rounds and major promotion days. A night-style session can include live roulette, blackjack, baccarat, game shows and real-time sports betting. We keep entertainment flexible, so each player chooses the pace, duration and format. Thanks to mobile optimization, the full entertainment experience is available without being tied to one location.
+</p>
+<p>
+Seasonal events at Beazt Casino are built around holidays, sports finals, popular game releases and limited-time promotional periods. These campaigns may include cashback, tournament prizes, free bets, enhanced odds, combo boosts and extra free spins. We refresh the promotions area regularly so players can discover current opportunities. The Beazt idea is simple: more reasons to return, more games to explore, more live events to follow and more personalized value to unlock.
+</p>
+<br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Beazt Casino Entertainment Options
+</h3>
+<ul>
+            <li>• Slot Tournaments — competitive slot events with leaderboards and prizes.</li>
+            <li>• Live Casino Tables — roulette, blackjack and baccarat with real dealers.</li>
+            <li>• Game Shows — interactive live games with wheels, multipliers and bonus rounds.</li>
+            <li>• Jackpot Events — curated games with larger prize potential.</li>
+            <li>• Sports Matchdays — betting on hockey, basketball, baseball, soccer and more.</li>
+            <li>• Combo Boosts — enhanced odds for accumulator-style bets.</li>
+            <li>• Free Bet Campaigns — complimentary bets for selected sports promotions.</li>
+            <li>• Seasonal Promotions — holiday offers, free spins, cashback and reload bonuses.</li>
+            <li>• New Game Drops — fresh releases from leading casino providers.</li>
+            <li>• VIP Campaigns — tailored offers and expanded benefits for active players.</li>
+        </ul><br>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Beazt Casino Leisure, Game Zones and Online Comfort
+</h3>
+<p>
+Beazt Casino is designed as an online entertainment space, so we do not tie the experience to a physical hotel, restaurant or bar. Instead, we offer a flexible digital format where every player can choose the right mood: fast slots, relaxed table games, live dealer casino, sports betting or the promotions area. This makes leisure personal because Beazt is available at any time from any preferred device. Players do not need to plan travel, reservations or parking, as the full casino lobby opens through one account.
+</p>
+<p>
+Our Live Casino works like a premium lounge, with real dealers, professional hosts, HD/4K streams and real-time gameplay. Slots are ideal for shorter sessions and energetic play, while jackpot games add the excitement of larger prize potential. Table games create a more classic casino mood where decisions, strategy and pace matter. The sportsbook expands the leisure experience with match betting, live markets, enhanced odds and combo boosts.
+</p>
+<p>
+The Beazt Casino promotions area acts as an event hub where players can find the welcome bonus, free spins, reload offers, cashback, tournaments and seasonal campaigns. The VIP direction adds a more personal service layer, allowing active players to access enhanced benefits. The whole platform works as one entertainment complex: casino, live lounge, sportsbook, cashier, bonuses and support are all connected. We make leisure fast, comfortable and rewarding without asking players to leave their everyday environment.
+</p>
+<br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Beazt Casino Leisure and Game Areas
+</h3>
+<ul>
+            <li>• Slots Lobby — a large slot area with classic, modern and Megaways-style games.</li>
+            <li>• Jackpot Games — a section for players interested in larger prize potential.</li>
+            <li>• Live Casino Lounge — live roulette, live blackjack, live baccarat and game shows.</li>
+            <li>• Table Games Zone — roulette, blackjack, baccarat and video poker.</li>
+            <li>• Sportsbook Area — sports betting, live markets, free bets and boosted odds.</li>
+            <li>• Promotions Hub — welcome bonus, reload offers, cashback, free spins and tournaments.</li>
+            <li>• VIP Experience — personal benefits, cashback layers and priority-style support.</li>
+            <li>• Mobile Play Area — full Beazt Casino access from smartphone and tablet.</li>
+            <li>• Secure Cashier — deposits, withdrawals and payment management in one place.</li>
+            <li>• Responsible Gaming Tools — limits, breaks and activity control features.</li>
+        </ul><br></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="faq">
+            <div class="container">
+                <div class="faqBlock block">
+                    <h2 class="faqTitle title"><span>Frequently Asked Questions</span></h2>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="what_is_the_minimum_deposit_for_the_welcome_bonus"/><label
+                            class="faqLabel" for="what_is_the_minimum_deposit_for_the_welcome_bonus">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> What is the minimum deposit for the welcome bonus? </span></label>
+                        <div class="faqContent">
+                            <p>The minimum deposit required for the welcome bonus is $10.</p>
+                        </div>
+                    </div>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="how_do_i_claim_the_beazt_welcome_bonus"/><label
+                            class="faqLabel" for="how_do_i_claim_the_beazt_welcome_bonus">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> How do I claim the Beazt welcome bonus? </span></label>
+                        <div class="faqContent">
+                            <p>Sign up, make a qualifying first deposit, choose your preferred bonus type, and receive the bonus money.</p>
+                        </div>
+                    </div>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="can_i_choose_between_casino_and_sports_bonuses"/><label
+                            class="faqLabel" for="can_i_choose_between_casino_and_sports_bonuses">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> Can I choose between casino and sports bonuses? </span></label>
+                        <div class="faqContent">
+                            <p>Yes, our welcome bonus allows guests to choose between a casino bonus and a sports bonus.</p>
+                        </div>
+                    </div>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="what_is_the_beazt_casino_bonus"/><label
+                            class="faqLabel" for="what_is_the_beazt_casino_bonus">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> What is the Beazt casino bonus? </span></label>
+                        <div class="faqContent">
+                            <p>The casino bonus is a 100% match up to $500 for slots and selected casino games.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<footer class="footer">
+    <div class="footerContainer">
+        <div class="footerTop">
+            <div class="footerLogoContainer"><a href="https://beazt-online.com" aria-label="Main page"><img class="footer__logo"
+                                                                                                     src="_assets/images/1781253849-logo.svg" alt="" width="140"
+                                                                                                     height="48" /></a></div>
+            <div class="footerPay">
+                <div class="payBlock"><img class="payElementGrey"
+                                           src="./assets/images/footer/payment/masterCard.svg" alt="MasterCard" /><img
+                        class="payElementColor" src="./assets/images/footer/payment/masterCard--color.svg"
+                        alt="MasterCard" title="MasterCard in Beazt" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/visa.svg"
+                                           alt="Visa" /><img class="payElementColor"
+                                                             src="./assets/images/footer/payment/visa--color.svg" alt="Visa" title="Visa in Beazt" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/neteller.svg"
+                                           alt="Neteller" /><img class="payElementColor"
+                                                                 src="./assets/images/footer/payment/neteller--color.svg" alt="Neteller" title="Neteller in Beazt" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/skrill.svg"
+                                           alt="Skrill" /><img class="payElementColor"
+                                                               src="./assets/images/footer/payment/skrill--color.svg" alt="Skrill" title="Skrill in Beazt" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/bitcoin.svg"
+                                           alt="Bitcoin" /><img class="payElementColor"
+                                                                src="./assets/images/footer/payment/bitcoin--color.svg" alt="Bitcoin" title="Bitcoin in Beazt" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/litecoin.svg"
+                                           alt="Litecoin" /><img class="payElementColor"
+                                                                 src="./assets/images/footer/payment/litecoin--color.svg" alt="Litecoin" title="Litecoin in Beazt" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/ethereum.svg"
+                                           alt="Etherium" /><img class="payElementColor"
+                                                                 src="./assets/images/footer/payment/ethereum--color.svg" alt="Etherium" title="Etherium in Beazt" /></div>
+            </div>
+        </div>
+        <div class="footerMiddle">
+            <div class="footerOperator">
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gpwa.svg" alt="GPWA" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/gpwa--color.svg"
+                        alt="GPWA" title="GPWA in Beazt" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gambleaware.svg" alt="Gamble Aware" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/gambleaware--color.svg"
+                        alt="Gamble Aware" title="Gamble Aware in Beazt" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gamcare.svg" alt="Game care" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/gamcare--color.svg"
+                        alt="Game care" title="Game care in Beazt" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gambling-therapy.svg" alt="Gambling Therapy" /><img
+                        class="operatorElementColor"
+                        src="./assets/images/footer/operator/gambling-therapy--color.svg" alt="Gambling Therapy" title="Gambling Therapy in Beazt" />
+                </div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gamban.svg" alt="Gamban" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/gamban--color.svg"
+                        alt="Gamban" title="Gamban in Beazt" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/betblocker.svg" alt="BetBlocker" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/betblocker--color.svg"
+                        alt="BetBlocker" title="BetBlocker in Beazt" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/itech_labs.svg" alt="ITech Labs" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/itech_labs--color.svg"
+                        alt="ITech Labs" title="ITech Labs in Beazt" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/ecogra.svg" alt="Ecogra" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/ecogra--color.svg"
+                        alt="Ecogra" title="Ecogra in Beazt" /></div>
+            </div>
+        </div>
+        <div class="footerNavBlock">
+            <nav>
+                <ul class="nav__list--footer">
+                    <li class="footer__navItem"><a href="index">index</a></li>
+                    <li class="footer__navItem"><a href="app">App</a></li>
+                    <li class="footer__navItem"><a href="bonuses">Bonuses</a></li>
+                    <li class="footer__navItem"><a href="terms">Terms</a></li>
+                    <li class="footer__navItem"><a href="privacy">Privacy</a></li>
+                    <li class="footer__navItem"><a href="faq">FAQ</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="footerBottom">
+            <div class="footerBottomGroup">
+                <p class="footerBottomAge">18+</p>
+                <p class="footerBottomCopyright">Copyright © <span class="js-current-year"></span> Beazt </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    var playButtonName = "#play-icon";
+    var informationOutlineName =
+        "#information-outline";
+    var topCasinoButtonText = "Claim Bonus";
+    var welcomeBonusText = "Welcome bonus";
+    var bonusDetailsButtonText = "";
+    var playNowText = "Play now";
+    var maximumAmountText = "";
+    var wagerText = "";
+    var bonusCodeText = "";
+    var depositText = "";
+    var casinoName = "Beazt";
+</script>
+
+</body>
+</html>
